@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import 'ContentViews.css';
 
 
 class ContentViews extends Component {
