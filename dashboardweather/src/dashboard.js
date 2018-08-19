@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Menu from './components/Menu';
-import contentViews from './components/contentViews';
+import contentViews from './components/ContentViews';
 import Header from './components/Header';
 
 class Dashboard extends Component {
