@@ -15,3 +15,11 @@
     margin-left: 5vw;
     margin-top: 5vh;
 }
+.cardChartComplete{
+    width: 80vw;
+    height: 30vh;
+    background-color: white;
+    border: 0.5px solid grey;
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
