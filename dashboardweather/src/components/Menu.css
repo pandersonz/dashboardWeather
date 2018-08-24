@@ -1,13 +1,14 @@
-#menu{
-    background-color: black;
-    height: 100%;
+.menu{
+    height: 77vh;
     width: 20%;
+    background-color: black;
+    
 }
-#buttom{
+.buttom{
     background-color: black;
     color: white;
     font-size: 14px;
 }
-#buttom:hover{
+.buttom:hover{
     background-color: darkslategray;
 }

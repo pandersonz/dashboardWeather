@@ -1,5 +1,17 @@
-#contentViews{
+.contentViews{
     width:80%;
-    height: 100%;
+    height: 77vh;
+    background-color:seashell;
+}
+.rowContent{
+    display: flex;
+    justify-content: space-between;
+}
+.cardChart{
+    width: 30vw;
+    height: 30vh;
     background-color: white;
+    border: 0.5px solid grey;
+    margin-left: 5vw;
+    margin-top: 5vh;
 }
