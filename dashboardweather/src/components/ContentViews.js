@@ -38,6 +38,18 @@ let data4= {
   }]
 }
 class ContentViews extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      citie:'',
+      objWeaher:{
+
+      }
+    }
+  }
+  obtainObjWeatherForCity(){
+    
+  }
   render() {
     return (
       <div className="contentViews">
