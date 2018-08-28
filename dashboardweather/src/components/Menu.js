@@ -9,6 +9,7 @@ class Menu extends Component {
         <div className='buttom'>Home</div>
         <div className='buttom'>Report</div>
         <div className='buttom'>About Us</div>
+
       </div>
     );
   }

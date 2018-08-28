@@ -1,6 +1,6 @@
 .contentViews{
     width:80%;
-    height: 85vh;
+    height: 95vh;
     background-color:seashell;
 }
 .rowContent{
@@ -12,14 +12,15 @@
     height: 30vh;
     background-color: white;
     border: 0.5px solid grey;
-    margin-left: 5vw;
+    margin-left: 2vw;
     margin-top: 5vh;
+    margin-right: 3vw;
 }
 .cardChartComplete{
-    width: 80vw;
-    height: 30vh;
+    width: 75vw;
+    height: 35vh;
     background-color: white;
     border: 0.5px solid grey;
-    margin-left: 5vw;
+    margin-left: 2vw;
     margin-top: 5vh;
 }

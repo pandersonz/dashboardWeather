@@ -43,7 +43,20 @@ class ContentViews extends Component {
     this.state={
       citie:'',
       objWeaher:{
-
+        id:'',
+        name:'',
+        descriptionWeather:'',
+        currentTemp:'',
+        minTemp:'',
+        maxTemp:'',
+        humidity:'',
+        pressure:'',
+        speedWind:'',
+        degreeWind:'',
+        rain:'',
+        dateWeather:'',
+        longitude:'',
+        latitude:''
       }
     }
   }
