@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './ContentViews.css';
 import {Bar,Line,Pie} from 'react-chartjs-2';
+import {obtaninWeatherCityBetweenDateXToDateY, obtainWeatherCurrentCity} from './ajax/ajax_weather';
 let dataDia= {
   labels: ["00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00", "08:00", "09:00", "10:00", "11:00", "12:00","13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00"],
   datasets: [{
   label: "My First dataset",
   backgroundColor: 'rgb(255, 99, 132)',
   borderColor: 'rgb(255, 99, 132)',
-  data: [0, 10, 5, 2, 20, 30, 45, 10, 5, 2, 20, 30, 45, 10, 5, 2, 20, 30, 45, 5, 2, 20, 30, 45],
+  data: [0, 10, 5, 2, 20, 30, 45, 10, 5, 2, 20, 30, 45, 10, 5, 2, 20, 30, 45, 5, 2, 20, 30, 45], //{this.state.datas['data1']}
   }]
 }
 let dataSemana= {
@@ -16,7 +17,7 @@ let dataSemana= {
   label: "My First dataset",
   backgroundColor: 'rgb(255, 99, 132)',
   borderColor: 'rgb(255, 99, 132)',
-  data: [0, 10, 5, 2, 20, 30, 45],
+  data: [0, 10, 5, 2, 20, 30, 45], //{this.state.datas['data2']}
   }]
 }
 let dataMes= {
@@ -25,24 +26,17 @@ let dataMes= {
   label: "My First dataset",
   backgroundColor: 'rgb(255, 99, 132)',
   borderColor: 'rgb(255, 99, 132)',
-  data: [0, 10, 5, 2, 20, 30, 45, 10, 5, 2, 20, 30, 45,0, 10, 5, 2, 20, 30, 45, 20, 30, 45,0, 10, 5, 2, 20, 30, 45],
+  data: [0, 10, 5, 2, 20, 30, 45, 10, 5, 2, 20, 30, 45,0, 10, 5, 2, 20, 30, 45, 20, 30, 45,0, 10, 5, 2, 20, 30, 45], //{this.state.datas['data3']}
   }]
 }
-let data4= {
-  labels: ["January", "February", "March", "April", "May", "June", "July"],
-  datasets: [{
-  label: "My First dataset",
-  backgroundColor: 'rgb(255, 99, 132)',
-  borderColor: 'rgb(255, 99, 132)',
-  data: [0, 10, 5, 2, 20, 30, 45],
-  }]
-}
+
 class ContentViews extends Component {
   constructor(props){
     super(props);
     this.state={
       citie:'',
-      objWeaher:{
+      datas:{},
+      objWeather:{
         id:'',
         name:'',
         descriptionWeather:'',
@@ -60,8 +54,18 @@ class ContentViews extends Component {
       }
     }
   }
-  obtainObjWeatherForCity(){
+  obtainObjWeatherCurrentForCity(){
+    obtainWeatherCurrentCity(this,this.state.objWeather['name'])
+  }
+  obtainObjWeatherForCityBetweenDatexToDatey(){
+    let dt= new Date();
     
+   
+    obtaninWeatherCityBetweenDateXToDateY(this,this.state.objWeather['name'],)
+  }
+  componentWillMount(){
+    obtainWeatherCurrentCity();
+    obtaninWeatherCityBetweenDateXToDateY();
   }
   render() {
     return (
