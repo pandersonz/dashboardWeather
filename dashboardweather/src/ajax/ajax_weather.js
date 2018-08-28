@@ -1,7 +1,7 @@
 
 import $ from 'jquery';
 
-export function obtenerWeatherCurrentCity(that,city){
+export function obtainWeatherCurrentCity(that,city){
     $.ajax({
         url: 'http://127.0.0.1/datos',
         type: "POST",
@@ -42,7 +42,7 @@ export function obtenerWeatherCurrentCity(that,city){
     })
 }
 
-export function obtenerWeatherCityBetweenDateXToDateY(that,city,dateX,dateY){
+export function obtaninWeatherCityBetweenDateXToDateY(that,city,dateX,dateY){
     $.ajax({
         url: 'http://127.0.0.1/datos',
         type: "POST",
